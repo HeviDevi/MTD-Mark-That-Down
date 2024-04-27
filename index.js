@@ -4,7 +4,7 @@ import('inquirer')
       const inquirer = inquirerModule.default;
       const fs = require('fs');
 
-const licenses = ['MIT', 'Apache', 'GPL', 'BSD', 'None'];
+const licenses = ['MIT', 'Apache', 'GPL', 'BSD', 'MPL', 'None'];
 
 const questions = [
   {
