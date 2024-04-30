@@ -64,8 +64,13 @@ const questions = [
     type: 'input',
     name: 'tests',
     message: 'Go the extra mile and write tests for your application. Then provide examples on how to run them here.',
+  },
+  {
+    type: 'list',
+    name: 'newREADME',
+    message: 'Would you like to create a uniquely titled README file or one simply titled README.md?',
+    choices: ['README.md', 'README[title].md']
   }
-  
 ];
 
 
@@ -123,7 +128,16 @@ https://github.com/${response.githubUsername}
 ${response.tests}
   `;
 
-  fs.writeFile(`README${response.title.replace(/\s/g, '')}.md`, newREADME, (err) =>
+//I added a feature that allows the user to name the README file based on the title of the project.
+//This way the user can create multiple README files for different projects.
+//I used the replace method to replace any spaces in the title with an empty string so that the title can be used as a file name
+
+  if (response.newREADME === 'README.md') {
+   fs.writeFile('README.md', newREADME, (err) =>
     err ? console.log(err) : console.log('Consider It MARKED DOWN!')
-        )});
+        );
+  } else if (response.newREADME === 'README[title].md') {
+    fs.writeFile(`README${response.title.replace(/\s/g, '')}.md`, newREADME, (err) =>
+    err ? console.log(err) : console.log('Consider It MARKED DOWN!')
+        )}});
       });
