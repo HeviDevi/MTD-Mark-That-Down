@@ -1,24 +1,28 @@
 {
-  "name": "mtd-mark-that-down",
+  "name": "mark-that-down",
   "version": "1.0.0",
-  "description": "README Generator",
-  "main": "inquirer.js",
+  "description": "a README.md generator",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node index.js "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HeviDevi/Mark-That-Down.git"
   },
   "keywords": [
-    "MTD",
-    "Mark",
-    "Down",
-    ".md",
+    "CLI",
+    "Markdown",
     "README",
-    "Generator",
-    "CLI"
+    "inquirer"
   ],
-  "author": "Devon 'HeviDevi' Ross",
+  "author": "Devon \"HeviDevi\" Ross",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HeviDevi/Mark-That-Down/issues"
+  },
+  "homepage": "https://github.com/HeviDevi/Mark-That-Down#readme",
   "dependencies": {
-    "esm": "^3.2.25",
-    "inquirer": "^9.2.19"
+    "inquirer": "^9.2.20"
   }
 }
