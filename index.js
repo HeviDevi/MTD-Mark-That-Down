@@ -1,3 +1,5 @@
+const { renderLicenseBadge } = require('./licenceFunctions');
+
 // inquirer is an ES module, not a CommonJS module, so we need to use import() to load it
 import('inquirer')
     .then(inquirerModule => {  
@@ -5,9 +7,10 @@ import('inquirer')
       const inquirer = inquirerModule.default;
       const fs = require('fs');
 
-const licenses = ['MIT', 'Apache', 'GPL', 'BSD', 'MPL', 'None'];
-
-//creates an array of objects that are questions for the user to answer when prompted.
+//Will be used in the list type question to provide the user with a list of licenses to choose from.
+const licenses = require('./licenceFunctions').licenses;
+const badges = require('./licenceFunctions').badges;
+//Creates an array of objects that are questions for the user to answer when prompted.
 const questions = [
   {
     type: 'input',
@@ -73,11 +76,13 @@ const questions = [
   }
 ];
 
-
 inquirer.prompt(questions)
   .then((response) => {
   const newREADME = `
 ## ${response.title}
+
+##Badges
+${renderLicenseBadge(response.license)}
 
 ## Description
 
@@ -126,10 +131,11 @@ https://github.com/${response.githubUsername}
 ## Tests
 
 ${response.tests}
+
   `;
 
 //I added a feature that allows the user to name the README file based on the title of the project.
-//This way the user can create multiple README files for different projects.
+//This way the user can create multiple README files for different projects without losing the previous README file.
 //I used the replace method to replace any spaces in the title with an empty string so that the title can be used as a file name
 
   if (response.newREADME === 'README.md') {
