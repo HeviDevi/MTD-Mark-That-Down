@@ -1,11 +1,15 @@
 
-## 
+## Mark That Down 
+
+##Badges
+![Static Badge](https://img.shields.io/badge/Licence-Apache-orange)
 
 ## Description
 
-
+a README.md generator
 
 ## Table of Contents
+
 - [Features](#features)
 - [Installation](#installation)
 - [Credits](#credits)
@@ -18,24 +22,34 @@
 
 ## Installation
 
+clone the repo 
 
+## Usage
+
+type node index.js into the console and answere the prompts
 
 ## Credits
 
-
+N/A 
 
 ## License
 
-MIT
+Apache
 
 ## How to Contribute
 
 
 
 ## Questions
+
 Email me with questions at:
 
 
 or visit my GitHub profile:
 https://github.com/
+
+## Tests
+
+
+
   
