@@ -81,7 +81,7 @@ inquirer.prompt(questions)
   const newREADME = `
 ## ${response.title}
 
-##Badges
+
 ${renderLicenseBadge(response.license)}
 
 ## Description
