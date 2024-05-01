@@ -1,4 +1,4 @@
-const { renderLicenseBadge } = require('./licenceFunctions');
+const { renderLicenseBadge, renderLicenseLink, renderLicenseSection } = require('./licenceFunctions');
 
 // inquirer is an ES module, not a CommonJS module, so we need to use import() to load it
 import('inquirer')
@@ -114,7 +114,9 @@ ${response.credits}
 
 ## License
 
-${response.license}
+ This application is covered under the ${response.license} license. 
+ For more information, visit the following link:
+${renderLicenseLink(response.license)}
 
 ## How to Contribute
 

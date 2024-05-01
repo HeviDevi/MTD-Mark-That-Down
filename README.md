@@ -1,12 +1,12 @@
 
-## Mark That Down 
+## MTD
 
 
-![Static Badge](https://img.shields.io/badge/Licence-Apache-orange)
+![Static Badge](https://img.shields.io/badge/Licence-MPL-purple)
 
 ## Description
 
-a README.md generator
+a README generator 
 
 ## Table of Contents
 
@@ -18,23 +18,25 @@ a README.md generator
 
 ## Features
 
-
+Includes links to related licences, generates badges, and allows the creation of multiple READM.md files 
 
 ## Installation
 
-clone the repo 
+clone the repo
 
 ## Usage
 
-type node index.js into the console and answere the prompts
+enter "node index.js" in the console and answer the prompts 
 
 ## Credits
 
-N/A 
+None. 
 
 ## License
 
-Apache
+ This application is covered under the MPL license. 
+ For more information, visit the following link:
+https://opensource.org/license/mpl-2-0
 
 ## How to Contribute
 
@@ -43,10 +45,10 @@ Apache
 ## Questions
 
 Email me with questions at:
-
+devon.r.ross@gmail.com
 
 or visit my GitHub profile:
-https://github.com/
+https://github.com/HeviDevi 
 
 ## Tests
 
