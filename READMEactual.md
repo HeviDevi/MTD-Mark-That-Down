@@ -12,7 +12,7 @@ Includes links to related licences, generates badges, and allows the creation of
 
 ## Installation
 
-clone the repo and make sure to install npm and the inquirer module. 
+clone the repo and make sure to install Node.JS and the inquirer module. 
 
 ## Usage
 
