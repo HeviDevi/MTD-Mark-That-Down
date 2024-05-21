@@ -1,13 +1,12 @@
 
-## MTD
-
-![Static Badge](https://img.shields.io/badge/Licence-MPL-purple)
+## MTD-Mark-That-Down!
 
 ## Description
 
 This application aims to strealine the process of creating a README.md file for any developer. 
 
 ## Features
+
 This CLI based app takes in user input via the Inquirer node package and generates a README.md file.
 Includes links to related licences, generates badges, and allows the creation of multiple READM.md files 
 
