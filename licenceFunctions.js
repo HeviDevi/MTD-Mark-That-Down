@@ -47,8 +47,7 @@ function renderLicenseSection(license) {
 if (license === 'None') {
   return '';
 } else {
-  return `
-## License
+  return `## License
 
 This application is covered under the ${license} license. 
 For more information, visit the following link:
