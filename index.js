@@ -81,7 +81,7 @@ import("inquirer").then((inquirerModule) => {
       type: "list",
       name: "newREADME",
       message:
-        "Would you like to create a uniquely titled README file or one simply titled README.md?(Choosing the latter will overwrite any existing README.md file)",
+        "Would you like to create a uniquely titled README file or one simply titled README.md?(Choosing the latter will overwrite any existing file named README.md )",
       choices: ["README.md", "README[title].md"],
     },
   ];
