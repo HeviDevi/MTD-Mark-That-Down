@@ -47,6 +47,17 @@ if (license === 'MIT') {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
+if (license === 'None') {
+  return '';
+} else {
+  return `
+## License
+
+This application is covered under the ${license} license. 
+For more information, visit the following link:
+${renderLicenseLink(license)}
+ `;
+}
 };
        
 

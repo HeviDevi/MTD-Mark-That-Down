@@ -112,11 +112,7 @@ ${response.usage}
 
 ${response.credits}
 
-## License
-
- This application is covered under the ${response.license} license. 
- For more information, visit the following link:
-${renderLicenseLink(response.license)}
+${renderLicenseSection(response.license)}
 
 ## How to Contribute
 
