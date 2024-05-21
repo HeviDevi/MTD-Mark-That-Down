@@ -3,7 +3,7 @@
 
 ## Description
 
-This application aims to strealine the process of creating a README.md file for any developer. 
+This application aims to streamline the process of creating a README.md file for any developer. 
 
 ## Features
 
@@ -17,11 +17,6 @@ clone the repo and make sure to install Node.JS and the inquirer module.
 ## Usage
 
 enter "node index.js" in the console and answer the prompts 
-
-## Credits
-
-None. 
-
 
 ## Questions
 
