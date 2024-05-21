@@ -71,7 +71,7 @@ const questions = [
   {
     type: 'list',
     name: 'newREADME',
-    message: 'Would you like to create a uniquely titled README file or one simply titled README.md?',
+    message: 'Would you like to create a uniquely titled README file or one simply titled README.md?(Choosing the latter will overwrite any existing README.md file)',
     choices: ['README.md', 'README[title].md']
   }
 ];
