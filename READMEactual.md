@@ -1,9 +1,9 @@
 
-## MTD-Mark-That-Down!
+## Mark-That-Down!
 
 ## Description
 
-This application aims to strealine the process of creating a README.md file for any developer. 
+This application aims to streamline the process of creating a README.md file for any developer. 
 
 ## Features
 
@@ -12,16 +12,11 @@ Includes links to related licences, generates badges, and allows the creation of
 
 ## Installation
 
-clone the repo and make sure to install npm and the inquirer module. 
+clone the repo and make sure to install Node.JS and the inquirer module. 
 
 ## Usage
 
 enter "node index.js" in the console and answer the prompts 
-
-## Credits
-
-None. 
-
 
 ## Questions
 
