@@ -1,5 +1,6 @@
 Mark-That-Down!
 ##Description
+<br>
 This application aims to streamline the process of creating a README.md file for any developer.
 
 ##Features
